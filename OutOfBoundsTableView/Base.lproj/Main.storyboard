@@ -18,29 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" textLabel="WNZ-un-CLb" detailTextLabel="2oS-hr-MHz" style="IBUITableViewCellStyleValue1" id="8gg-Rv-9ms">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="80" id="8gg-Rv-9ms" customClass="TableViewCell" customModule="OutOfBoundsTableView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="80"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8gg-Rv-9ms" id="VJ3-tt-5AA">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="79"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="WNZ-un-CLb">
-                                            <rect key="frame" x="15" y="11" width="34" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2oS-hr-MHz">
-                                            <rect key="frame" x="316" y="11" width="44" height="21"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="NTy-Hq-MwH">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="79.5"/>
+                                        </imageView>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstItem="NTy-Hq-MwH" firstAttribute="centerY" secondItem="VJ3-tt-5AA" secondAttribute="centerY" id="IMT-AM-kVb"/>
+                                        <constraint firstItem="NTy-Hq-MwH" firstAttribute="leading" secondItem="VJ3-tt-5AA" secondAttribute="leading" id="T8Q-Sj-3KJ"/>
+                                        <constraint firstItem="NTy-Hq-MwH" firstAttribute="centerX" secondItem="VJ3-tt-5AA" secondAttribute="centerX" id="aiG-ru-b5D"/>
+                                        <constraint firstAttribute="bottom" secondItem="NTy-Hq-MwH" secondAttribute="bottom" id="ddj-4c-Z31"/>
+                                    </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="contentImageView" destination="NTy-Hq-MwH" id="oKu-rS-8QD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
