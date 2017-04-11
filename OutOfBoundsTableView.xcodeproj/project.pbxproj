@@ -13,6 +13,7 @@
 		ED0CE2251E9D226A006C5766 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED0CE2241E9D226A006C5766 /* Assets.xcassets */; };
 		ED0CE2281E9D226A006C5766 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED0CE2261E9D226A006C5766 /* LaunchScreen.storyboard */; };
 		ED0CE2301E9D238F006C5766 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CE22F1E9D238F006C5766 /* TableViewController.swift */; };
+		ED0CE2321E9D2E63006C5766 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED0CE2311E9D2E63006C5766 /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		ED0CE2271E9D226A006C5766 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ED0CE2291E9D226A006C5766 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED0CE22F1E9D238F006C5766 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		ED0CE2311E9D2E63006C5766 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				ED0CE21D1E9D226A006C5766 /* AppDelegate.swift */,
+				ED0CE2311E9D2E63006C5766 /* ViewController.swift */,
 				ED0CE22F1E9D238F006C5766 /* TableViewController.swift */,
 				ED0CE2211E9D226A006C5766 /* Main.storyboard */,
 				ED0CE2241E9D226A006C5766 /* Assets.xcassets */,
@@ -211,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED0CE2321E9D2E63006C5766 /* ViewController.swift in Sources */,
 				ED0CE21E1E9D226A006C5766 /* AppDelegate.swift in Sources */,
 				ED0CE2301E9D238F006C5766 /* TableViewController.swift in Sources */,
 			);

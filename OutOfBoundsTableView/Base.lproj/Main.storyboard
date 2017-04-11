@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table-->
+        <!--Ramen-->
         <scene sceneID="1fy-Sj-rO5">
             <objects>
                 <tableViewController id="Nzz-1f-4fQ" customClass="TableViewController" customModule="OutOfBoundsTableView" customModuleProvider="target" sceneMemberID="viewController">
@@ -46,7 +46,7 @@
                             <outlet property="delegate" destination="Nzz-1f-4fQ" id="HNq-QX-WNS"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Table" id="NxD-aC-RwR"/>
+                    <navigationItem key="navigationItem" title="Ramen" id="NxD-aC-RwR"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfj-QI-yCl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -55,7 +55,7 @@
         <!--Home-->
         <scene sceneID="4py-8x-pQC">
             <objects>
-                <viewController id="oWG-Lq-egC" sceneMemberID="viewController">
+                <viewController id="oWG-Lq-egC" customClass="ViewController" customModule="OutOfBoundsTableView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kyn-aI-067"/>
                         <viewControllerLayoutGuide type="bottom" id="0vc-85-vBz"/>
@@ -72,15 +72,30 @@
                                     <constraint firstAttribute="width" constant="160" id="J7X-Re-hbh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <state key="normal" title="Show Table"/>
+                                <state key="normal" title="Show Ramen"/>
                                 <connections>
                                     <segue destination="Nzz-1f-4fQ" kind="show" id="0h8-7D-aEy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gwU-mb-zhN">
+                                <rect key="frame" x="107" y="627" width="160" height="20"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="LKc-Fr-FRj"/>
+                                    <constraint firstAttribute="height" constant="20" id="tN9-iJ-dh5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <state key="normal" title="Clear Image Cache"/>
+                                <connections>
+                                    <action selector="clearImageCacheWithSender:" destination="oWG-Lq-egC" eventType="touchUpInside" id="BAr-at-mhv"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="gwU-mb-zhN" firstAttribute="centerX" secondItem="qGi-6q-g8Q" secondAttribute="centerX" id="GCc-2A-lLG"/>
                             <constraint firstItem="jxw-Gl-1ei" firstAttribute="centerX" secondItem="qGi-6q-g8Q" secondAttribute="centerX" id="K7t-0w-MoF"/>
+                            <constraint firstItem="0vc-85-vBz" firstAttribute="top" secondItem="gwU-mb-zhN" secondAttribute="bottom" constant="20" id="bO3-LC-Tjg"/>
                             <constraint firstItem="jxw-Gl-1ei" firstAttribute="centerY" secondItem="qGi-6q-g8Q" secondAttribute="centerY" id="pV1-ud-0ua"/>
                         </constraints>
                     </view>
