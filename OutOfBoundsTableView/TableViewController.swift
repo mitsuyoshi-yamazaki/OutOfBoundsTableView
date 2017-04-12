@@ -64,7 +64,10 @@ class TableViewController: UITableViewController {
         let height = (tableView.frame.size.width * image.size.height) / image.size.width
         this.contents[indexPath.row] = (image: image, height: height)
         
-        tableView.reloadRows(at: [indexPath], with: .none)
+        DispatchQueue.main.async {  // I don't understand why I need this. It's already on the main thread but fixes crash.
+          tableView.beginUpdates()
+          tableView.endUpdates()
+        }
       })
     }
     
